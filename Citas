@@ -1,0 +1,397 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    .footer{
+        background-color: #085494;
+        width: 101.03%;
+        height: 200px;
+        margin-left: -7.7px;
+        margin-bottom: -8px;
+        padding-top: 55px;
+        display: flex;
+        margin-top: 100px;
+    }
+    .textFooterTitle{
+        font-family: "Poppins", sans-serif;
+        font-size: 45px;
+        width: 15%;
+        margin-left:80px ;
+        text-align: center;
+        color: white;
+        margin-top: 15px;
+    }
+    .hr2{
+        height:20vh;
+        width:.4vw;
+        border-width:0;
+        color:white;
+        background-color:white;
+    }
+    .icons{
+        margin-left: -60px;
+        margin-top: 55px;
+        
+    }
+    .hrspace{
+        width: 20%;
+    }
+    .hr2{
+        height:20vh;
+        width:.4vw;
+        border-width:0;
+        color:white;
+        background-color:white;
+    }
+    .contact{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        width: 20%px;
+        margin-left: -20px;
+        text-align: right;
+    }
+    img{
+        height: 60px;
+        margin-left: 60px;
+        justify-content: center;
+        
+    }
+    .mainSpace{
+    
+       height: 715px;
+       display: flex;
+       width: 100%; 
+       margin: auto;
+
+    }
+    .inputSpace{
+        width: 281.25px;
+        justify-content: center;
+        margin: auto;
+    }
+    .leftSpace{
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        height: 600px;
+        width: 50%;
+        
+    }
+    .rightSpace{
+        margin-top: -9px;
+        height: 715px;
+        justify-content: center;
+        text-align: center;
+        
+        margin-right:-9px ;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        --opacidad-negro: 0.8;
+        background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(/citas);
+    }
+    .sideInput{
+        margin: 0 auto;
+        width: 281.25px;
+        height: 45px;
+        margin-bottom: 10px;
+        
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        color: #555;
+    }
+    input{
+        color: #555;
+    }
+
+    input[type=text]:focus {
+    border: 2px solid #555;
+    }
+    select:focus {
+    border: 2px solid #555;
+    }
+    .sideButton{
+        margin: 0 auto;
+        width: 281.25px;
+        height: 45px;
+        
+        border-style: none;
+        background-color: #085494;
+        color: white;
+    }
+    
+    .space{
+        width: 200px;
+    }
+    
+    .start{
+        margin: auto;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+
+    }
+    .startText{
+        margin: auto;
+        justify-content: center;
+        color: #085494;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    a{
+        color: #085494;
+        text-decoration: none;
+    }
+    .between{
+        height: 50px;
+    }
+    .espacioTabla{
+        margin: auto;
+        width: 365.08px;
+        justify-content: center;
+        
+    }
+    td{
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        margin-left:10px;
+        color: #085494;
+    }
+    .secondSpace{
+        margin-top: 50px;
+        color: #085494;
+    }
+    .secondStart{
+        margin: auto;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        width: 339px;
+        margin-bottom: 20px;
+    }
+    .tdspace{
+        
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 5px;
+        width: 5px;
+    }
+</style>
+<body>
+
+    <div class="mainSpace">
+        <div class="leftSpace">
+            <div class="start"><a href="/index">Nueva Cita</a></div>
+            <p class="startText"> Ingresa los datos de los citas</p>
+            <div class="between"></div>
+            <div class="inputSpace">
+                <select class="sideInput" id = "cargadepersonas" >
+                    <option>Cedula</option>
+                </select>
+                <input class="sideInput"  type="text" placeholder="Dia" id="dia"/>
+                <input class="sideInput" type="text" placeholder="Hora" id="hora"/>
+                <input class="sideInput" type="text" placeholder="Doctor" id="doctor"/>
+                <input class="sideInput" type="text" placeholder="Especialidad" id="especialidad"/>
+                <input class="sideButton" type="button" value="Guardar" onclick="guarda()"/>
+            </div>
+        </div>
+
+        <div class="rightSpace">
+        
+            
+            </div>
+            
+            
+    </div>
+    <div class="secondSpace">
+        <div class="secondStart">
+            Lista de Citas
+        </div>
+        <div id="espacioTabla" class="espacioTabla">
+            <table>
+            <thead>
+            <tr>
+            <td>Cedula</td>
+            <td class="tdspace"></td>
+            <td>Dia</td>
+            <td class="tdspace"></td>
+            <td>Hora</td>
+            <td class="tdspace"></td>
+            <td>Doctor</td>
+            <td class="tdspace"></td>
+            <td>especialidad</td>
+            </tr>
+            
+            </thead>
+            <tbody id="cuerpoTabla">
+            </tbody>
+            </table>
+        
+        </div>   
+    
+    </div>
+    
+    
+    
+        <div class="footer">
+            <h1 class="textFooterTitle">
+                ¡Síguenos en redes!
+            </h1>
+            <div class="hrspace">
+                <hr class="hr2">
+            </div>
+            
+            <div class="icons">
+                <img src="/instagram">
+                <img src="/facebook">
+                <img src="/tik-tok">
+            </div>
+            <div class="hrspace">
+                <hr class="hr2">
+            </div>
+            
+            <div class="contact">
+                <p>Nuestro correo electrónico:</p>
+                <p>medisite@gmail.com</p>
+                <p> Nuestro número de teléfono:</p>
+                <p>1234-5678</p>
+    
+            </div>
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            function cargarDatos()
+                    {
+                    var objetoaenviar = new Object();
+                                
+                        try
+                            {
+                                var xhr = new XMLHttpRequest();
+                                xhr.open('GET','/cita');
+                                xhr.setRequestHeader('Content-Type','application/json');
+                                xhr.onload = function()
+                                {
+                                if(xhr.status == 200)
+                                    {
+                                        console.log(JSON.parse(xhr.responseText));
+                                        rellenaTabla(JSON.parse(xhr.responseText))
+                                    }
+                                else
+                                    {
+                                        console.log(xhr);
+                                    }
+                                };
+                                xhr.send();
+                                }
+                        catch(err)
+                            {
+                                console.log(err.message);
+                            }
+                    }
+            function cargarDatosPersona()
+                    {
+                    var objetoaenviar = new Object();
+                                
+                        try
+                            {
+                                var xhr = new XMLHttpRequest();
+                                xhr.open('GET','/persona');
+                                xhr.setRequestHeader('Content-Type','application/json');
+                                xhr.onload = function()
+                                {
+                                if(xhr.status == 200)
+                                    {
+                                        console.log(JSON.parse(xhr.responseText));
+                                        rellenaselect(JSON.parse(xhr.responseText))
+                                    }
+                                else
+                                    {
+                                        console.log(xhr);
+                                    }
+                                };
+                                xhr.send();
+                                }
+                        catch(err)
+                            {
+                                console.log(err.message);
+                            }
+                    }
+            function rellenaselect(vector)
+                    {
+                    document.getElementById("cargadepersonas").innerHTML =""
+                    for (var elemento in vector)
+                        {
+                            document.getElementById("cargadepersonas").innerHTML += "<option id = " + vector[elemento].cedula + " value = " + vector[elemento].cedula + ">" + vector[elemento].cedula + " " + vector[elemento].nombre + " </option>"
+                        }
+                       
+                    }
+            
+            cargarDatosPersona()
+            
+            function guarda()
+            
+            
+                    {
+                        var objetoaenviar = new Object();
+                        objetoaenviar.cedula = document.getElementById("cargadepersonas").value
+                        objetoaenviar.dia = document.getElementById("dia").value
+                        objetoaenviar.hora = document.getElementById("hora").value
+                        objetoaenviar.doctor = document.getElementById("doctor").value
+                        objetoaenviar.especialidad = document.getElementById("especialidad").value            
+                                
+                        try
+                            {
+                                var xhr = new XMLHttpRequest();
+                                xhr.open('PUT','/cita');
+                                xhr.setRequestHeader('Content-Type','application/json');
+                                xhr.onload = function()
+                                {
+                                if(xhr.status == 200)
+                                    {
+                                        console.log(JSON.parse(xhr.responseText));
+                                        alert('Guardado')
+                                        rellenaTabla(JSON.parse(xhr.responseText))
+            
+                                    }
+                                else
+                                    {
+                                        console.log(xhr);
+                                    }
+                                };
+                                xhr.send(JSON.stringify(objetoaenviar));
+                                }
+                        catch(err)
+                            {
+                                console.log(err.message);
+                            }
+                    }
+            
+                    function rellenaTabla(vector)
+                    {
+                    document.getElementById("cuerpoTabla").innerHTML =""
+                    document.getElementById("cuerpoTabla").innerHTML += "<tr>"
+                    for (var elemento in vector)
+                        {
+                            document.getElementById("cuerpoTabla").innerHTML += "<td>" + vector[elemento].cedula + "</td><td class='tdspace'></td><td>" + vector[elemento].dia  + "</td><td class='tdspace'></td><td>" + vector[elemento].hora  + "</td><td class='tdspace'></td><td>" + vector[elemento].doctor  + "</td><td class='tdspace'></td><td>"+ vector[elemento].especialidad  + "</td>"
+                        }
+                        document.getElementById("cuerpoTabla").innerHTML += "</tr>"
+                    }
+            </script>
+</body>
+</html>
